@@ -1,10 +1,6 @@
 # Bools and Logic Operators
 
-Beginner level task for practicing Boolean values and logic operators.
-
-Estimated time to complete the task - 1h.
-
-The task requires .NET 6 SDK installed.
+Practicing Boolean values and logic operators.
 
 
 ## Task Description
@@ -97,7 +93,7 @@ Implement the other methods and create the truth tables for them (no need to add
 
 ### Logical Puzzles
 
-In this section you have to use the logical operators to solve the logical puzzles in the [LogicalPuzzles.cs](Bools/LogicalPuzzles.cs) file. You can combine the logical operators together to get the expected result of a logical function. Start with creating a _truth table_ for a logical function you work with, then analyze it and reconstruct a logical function to satisfy the truth table criteria.
+Using the logical operators to solve the logical puzzles in the [LogicalPuzzles.cs](Bools/LogicalPuzzles.cs) file. You can combine the logical operators together to get the expected result of a logical function. Start with creating a _truth table_ for a logical function you work with, then analyze it and reconstruct a logical function to satisfy the truth table criteria.
 
 Here's the example of solving [Puzzle1](Bools/LogicalPuzzles.cs#L5) puzzle.
 
@@ -145,34 +141,3 @@ public static bool Puzzle1(bool b1, bool b2)
     return !b1 || b2;
 }
 ```
-
-Now the method produces correct expected results for all tests cases for the _Puzzle1_ReturnBool_ unit test.
-
-Implement the other logical puzzles in the same way. Some puzzles assume using parentheses to change the order of [operand evaluation](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/#operand-evaluation).
-
-
-## Fix Compiler Issues
-
-Additional style and code checks are enabled for the projects in this solution to help you maintaining consistency of the project source code and avoiding silly mistakes. [Review the Error List](https://docs.microsoft.com/en-us/visualstudio/ide/find-and-fix-code-errors#review-the-error-list) in Visual Studio to see all compiler warnings and errors.
-
-If a compiler error or warning message is not clear, [review errors details](https://docs.microsoft.com/en-us/visualstudio/ide/find-and-fix-code-errors#review-errors-in-detail) or google the error or warning code to get more information about the issue.
-
-
-## Task Checklist
-
-1. Rebuild the solution.
-1. Fix all compiler warnings and errors.
-1. Run all unit tests, make sure all unit tests completed successfully.
-1. Review all changes, make sure the only code files (.cs) in Bools project have changes. No changes in project files (.csproj) or in Bools.Tests project.
-1. Stage your changes, and create a commit.
-1. Push your changes to remote repository.
-
-
-## See also
-
-* C# Language Reference
-  * [bool](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/bool)
-  * [Boolean logical operators](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/boolean-logical-operators)
-* .NET API
-  * [Boolean Struct](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)
-* [Truth table](https://en.wikipedia.org/wiki/Truth_table)
