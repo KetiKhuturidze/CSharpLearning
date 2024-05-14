@@ -20,53 +20,6 @@ The expected results table has the method outputs for different values of the _b
 | true  | 123             |
 | false | -123            |
 
-The code you have to implement should be similar to this code snippet:
-
-```cs
-public static int DoSomething(bool b)
-{
-    int result = 0;
-
-    if (b)
-    {
-        result = 123;
-    }
-
-    if (!b)
-    {
-        result = -123;
-    }
-
-    return result;
-}
-```
-
-Identical results can be obtained by implementing an algorithm using the _if_ statement **with** an _else_ part.
-
-[Refactor](https://en.wikipedia.org/wiki/Code_refactoring) the method code: replace the second _if_ statement with an _else_ part.
-
-```cs
-public static int DoSomething(bool b)
-{
-    int result = 0;
-
-    if (b)
-    {
-        result = 123;
-    }
-    else
-    {
-        result = -123;
-    }
-
-    return result;
-}
-```
-
-Now the algorithm conforms to the flowchart below.
-
-![Task 1-2 Flowchart](images/task1-2.png)
-
 
 ### Sub-task 2
 
@@ -74,7 +27,7 @@ Implement the [DoSomething1](IfElseStatements/Task2.cs#L5) method in the _Task2_
 
 ![Task 2-1 Flowchart](images/task2-1.png)
 
-The expected results table has the method outputs for different values of the _b1_ and _b2_ input parameters. The expected method outputs are used as test cases for the method [unit test](IfElseStatements.Tests/Task2Tests.cs#L12).
+The expected results table has the method outputs for different values of the _b1_ and _b2_ input parameters.
 
 | b1    | b2    | Expected Result |
 |-------|-------|-----------------|
@@ -296,12 +249,5 @@ The algorithm shown on the flowchart below is implemented using cascading _if-el
 ![Task 8 Flowchart](images/task8.png)
 
 Analyze the algorithm and implement the [DoSomething](IfElseStatements/Task7.cs#L5) method in the _Task7_ class with **nested** _if-else_ statements. For the expected method output values see test cases for the method [unit test](IfElseStatements.Tests/Task8Tests.cs#L450).
-
-
-## Fix Compiler Issues
-
-Additional style and code checks are enabled for the projects in this solution to help you maintaining consistency of the project source code and avoiding silly mistakes. [Review the Error List](https://docs.microsoft.com/en-us/visualstudio/ide/find-and-fix-code-errors#review-the-error-list) in Visual Studio to see all compiler warnings and errors.
-
-If a compiler error or warning message is not clear, [review errors details](https://docs.microsoft.com/en-us/visualstudio/ide/find-and-fix-code-errors#review-errors-in-detail) or google the error or warning code to get more information about the issue.
 
 
