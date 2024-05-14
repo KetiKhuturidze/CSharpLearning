@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<co:book id="1" xmlns:co="http://www.contoso.com/book">
+  <co:title>Pride And Prejudice</co:title>
+</co:book>
