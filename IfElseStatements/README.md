@@ -1,22 +1,13 @@
 # If-Else Statements
 
-Beginner level task for practicing conditionals and if-else statements.
-
-Estimated time to complete the task - 3h.
-
-The task requires .NET 6 SDK installed.
-
 
 ## Task Description
 
 The task has eight sub-tasks. Each sub-task is a small coding exercise.
 
-Basic understanding of [flowchart diagrams](https://en.wikipedia.org/wiki/Flowchart) is required to successfully complete the task. If you are not familiar with flowchart diagrams, read the Wikipedia article first.
-
-
 ### Sub-task 1
 
-In this sub-task you have to implement the [DoSomething](IfElseStatements/Task1.cs#L5) static method that belongs to the _Task1_ class. In the method code use _if_ statements **without** the _else_ part. The algorithm you have implement is shown on the flowchart diagram below.
+Implement the [DoSomething](IfElseStatements/Task1.cs#L5) static method that belongs to the _Task1_ class. In the method code use _if_ statements **without** the _else_ part. The algorithm you have implement is shown on the flowchart diagram below.
 
 ![Task 1-1 Flowchart](images/task1-1.png)
 
@@ -29,53 +20,6 @@ The expected results table has the method outputs for different values of the _b
 | true  | 123             |
 | false | -123            |
 
-The code you have to implement should be similar to this code snippet:
-
-```cs
-public static int DoSomething(bool b)
-{
-    int result = 0;
-
-    if (b)
-    {
-        result = 123;
-    }
-
-    if (!b)
-    {
-        result = -123;
-    }
-
-    return result;
-}
-```
-
-Identical results can be obtained by implementing an algorithm using the _if_ statement **with** an _else_ part.
-
-[Refactor](https://en.wikipedia.org/wiki/Code_refactoring) the method code: replace the second _if_ statement with an _else_ part.
-
-```cs
-public static int DoSomething(bool b)
-{
-    int result = 0;
-
-    if (b)
-    {
-        result = 123;
-    }
-    else
-    {
-        result = -123;
-    }
-
-    return result;
-}
-```
-
-Now the algorithm conforms to the flowchart below.
-
-![Task 1-2 Flowchart](images/task1-2.png)
-
 
 ### Sub-task 2
 
@@ -83,7 +27,7 @@ Implement the [DoSomething1](IfElseStatements/Task2.cs#L5) method in the _Task2_
 
 ![Task 2-1 Flowchart](images/task2-1.png)
 
-The expected results table has the method outputs for different values of the _b1_ and _b2_ input parameters. The expected method outputs are used as test cases for the method [unit test](IfElseStatements.Tests/Task2Tests.cs#L12).
+The expected results table has the method outputs for different values of the _b1_ and _b2_ input parameters.
 
 | b1    | b2    | Expected Result |
 |-------|-------|-----------------|
@@ -116,9 +60,6 @@ The expected results table has the method outputs for various values of the _b_ 
 | false | (-&infin;, 8)   | i - 1           |
 | false | [8, &infin;)    | i + 10          |
 
-[The standard notation for math intervals](https://en.wikipedia.org/wiki/Interval_(mathematics)) is used to specify ranges for integer parameters. Infinity signs (-&infin; and &infin;) are usedd to specify the parameter maximum and minimum values.
-
-Identical results can be obtained by implementing an algorithm using the _if_ statement **with** an _else_ part.
 
 ![Task 3-2 Flowchart](images/task3-2.png)
 
@@ -310,25 +251,3 @@ The algorithm shown on the flowchart below is implemented using cascading _if-el
 Analyze the algorithm and implement the [DoSomething](IfElseStatements/Task7.cs#L5) method in the _Task7_ class with **nested** _if-else_ statements. For the expected method output values see test cases for the method [unit test](IfElseStatements.Tests/Task8Tests.cs#L450).
 
 
-## Fix Compiler Issues
-
-Additional style and code checks are enabled for the projects in this solution to help you maintaining consistency of the project source code and avoiding silly mistakes. [Review the Error List](https://docs.microsoft.com/en-us/visualstudio/ide/find-and-fix-code-errors#review-the-error-list) in Visual Studio to see all compiler warnings and errors.
-
-If a compiler error or warning message is not clear, [review errors details](https://docs.microsoft.com/en-us/visualstudio/ide/find-and-fix-code-errors#review-errors-in-detail) or google the error or warning code to get more information about the issue.
-
-
-## Task Checklist
-
-1. Rebuild the solution.
-1. Fix all compiler warnings and errors.
-1. Run all unit tests, make sure all unit tests completed successfully.
-1. Review all changes, make sure the only code files (.cs) in IfElseStatements project have changes. No changes in project files (.csproj) or in IfElseStatements.Tests project.
-1. Stage your changes, and create a commit.
-1. Push your changes to remote repository.
-
-
-## See also
-
-* C# Language Reference
-  * [The if statement](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/statements/selection-statements#the-if-statement)
-  * [Boolean logical operators](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/boolean-logical-operators)
