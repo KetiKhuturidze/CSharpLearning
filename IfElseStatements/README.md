@@ -1,22 +1,13 @@
 # If-Else Statements
 
-Beginner level task for practicing conditionals and if-else statements.
-
-Estimated time to complete the task - 3h.
-
-The task requires .NET 6 SDK installed.
-
 
 ## Task Description
 
 The task has eight sub-tasks. Each sub-task is a small coding exercise.
 
-Basic understanding of [flowchart diagrams](https://en.wikipedia.org/wiki/Flowchart) is required to successfully complete the task. If you are not familiar with flowchart diagrams, read the Wikipedia article first.
-
-
 ### Sub-task 1
 
-In this sub-task you have to implement the [DoSomething](IfElseStatements/Task1.cs#L5) static method that belongs to the _Task1_ class. In the method code use _if_ statements **without** the _else_ part. The algorithm you have implement is shown on the flowchart diagram below.
+Implement the [DoSomething](IfElseStatements/Task1.cs#L5) static method that belongs to the _Task1_ class. In the method code use _if_ statements **without** the _else_ part. The algorithm you have implement is shown on the flowchart diagram below.
 
 ![Task 1-1 Flowchart](images/task1-1.png)
 
@@ -116,9 +107,6 @@ The expected results table has the method outputs for various values of the _b_ 
 | false | (-&infin;, 8)   | i - 1           |
 | false | [8, &infin;)    | i + 10          |
 
-[The standard notation for math intervals](https://en.wikipedia.org/wiki/Interval_(mathematics)) is used to specify ranges for integer parameters. Infinity signs (-&infin; and &infin;) are usedd to specify the parameter maximum and minimum values.
-
-Identical results can be obtained by implementing an algorithm using the _if_ statement **with** an _else_ part.
 
 ![Task 3-2 Flowchart](images/task3-2.png)
 
@@ -317,18 +305,3 @@ Additional style and code checks are enabled for the projects in this solution t
 If a compiler error or warning message is not clear, [review errors details](https://docs.microsoft.com/en-us/visualstudio/ide/find-and-fix-code-errors#review-errors-in-detail) or google the error or warning code to get more information about the issue.
 
 
-## Task Checklist
-
-1. Rebuild the solution.
-1. Fix all compiler warnings and errors.
-1. Run all unit tests, make sure all unit tests completed successfully.
-1. Review all changes, make sure the only code files (.cs) in IfElseStatements project have changes. No changes in project files (.csproj) or in IfElseStatements.Tests project.
-1. Stage your changes, and create a commit.
-1. Push your changes to remote repository.
-
-
-## See also
-
-* C# Language Reference
-  * [The if statement](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/statements/selection-statements#the-if-statement)
-  * [Boolean logical operators](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/boolean-logical-operators)
